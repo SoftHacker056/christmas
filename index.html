@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas! 🎄</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Christmas Lights Border -->
+    <div class="christmas-lights">
+        <div class="light red"></div>
+        <div class="light green"></div>
+        <div class="light blue"></div>
+        <div class="light yellow"></div>
+        <div class="light red"></div>
+        <div class="light green"></div>
+        <div class="light blue"></div>
+        <div class="light yellow"></div>
+        <div class="light red"></div>
+        <div class="light green"></div>
+        <div class="light blue"></div>
+        <div class="light yellow"></div>
+    </div>
+
+    <!-- Santa Sleigh Animation -->
+    <div class="santa-sleigh" id="santaSleigh">🛷🎅</div>
+
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Snowflakes Animation -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+    </div>
+
+    <!-- Christmas Countdown -->
+    <div class="countdown-container" id="countdownContainer">
+        <div class="countdown-title">⏰ Days Until Christmas</div>
+        <div class="countdown-number" id="countdownNumber">0</div>
+    </div>
+
+    <div class="container" id="nameContainer">
+        <div class="santa-hat">🎅</div>
+        <h1 class="title">Welcome to Christmas!</h1>
+        <p class="subtitle">Please enter your name to receive a special Christmas greeting</p>
+        
+        <!-- Interactive Christmas Tree -->
+        <div class="mini-tree">
+            <div class="tree-top">🎄</div>
+            <div class="ornament ornament-1" data-ornament="1">🔴</div>
+            <div class="ornament ornament-2" data-ornament="2">🟢</div>
+            <div class="ornament ornament-3" data-ornament="3">🔵</div>
+            <div class="ornament ornament-4" data-ornament="4">🟡</div>
+            <div class="tree-star">⭐</div>
+        </div>
+
+        <form id="nameForm">
+            <input type="text" id="nameInput" placeholder="Enter your name..." required autofocus>
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+
+    <div class="container greeting-container" id="greetingContainer" style="display: none;">
+        <!-- Gift Boxes -->
+        <div class="gift-boxes">
+            <div class="gift-box" data-gift="1">
+                <div class="gift-lid">🎁</div>
+                <div class="gift-content">✨</div>
+            </div>
+            <div class="gift-box" data-gift="2">
+                <div class="gift-lid">🎁</div>
+                <div class="gift-content">🎄</div>
+            </div>
+            <div class="gift-box" data-gift="3">
+                <div class="gift-lid">🎁</div>
+                <div class="gift-content">⭐</div>
+            </div>
+        </div>
+
+        <div class="santa-animation">🎅</div>
+        <h1 class="greeting-title">
+            <span class="merry">Merry</span>
+            <span class="christmas">Christmas</span>
+        </h1>
+        <h2 class="name-greeting" id="nameGreeting"></h2>
+        <p class="message" id="greetingMessage">Wishing you and your loved ones a wonderful holiday season filled with joy, laughter, and happiness! 🎄✨</p>
+        
+        <!-- 3D Ornaments -->
+        <div class="ornaments-3d">
+            <div class="ornament-3d" data-ornament="1">🔴</div>
+            <div class="ornament-3d" data-ornament="2">🟢</div>
+            <div class="ornament-3d" data-ornament="3">🔵</div>
+            <div class="ornament-3d" data-ornament="4">🟡</div>
+        </div>
+
+        <div class="decorations">
+            <span class="decoration clickable-dec" data-emoji="🎁">🎁</span>
+            <span class="decoration clickable-dec" data-emoji="🎄">🎄</span>
+            <span class="decoration clickable-dec" data-emoji="⛄">⛄</span>
+            <span class="decoration clickable-dec" data-emoji="🦌">🦌</span>
+            <span class="decoration clickable-dec" data-emoji="🎅">🎅</span>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn" id="resetBtn">Send Another Greeting</button>
+            <button class="btn btn-secondary" id="shareBtn">Share This Greeting</button>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confettiContainer"></div>
+
+    <canvas id="cursorCanvas"></canvas>
+
+    <!-- Snow Globe Effect -->
+    <div class="snow-globe" id="snowGlobe">
+        <div class="globe-content">❄</div>
+    </div>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="musicToggle" title="Toggle Music">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
